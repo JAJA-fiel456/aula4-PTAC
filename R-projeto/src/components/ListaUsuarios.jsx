@@ -10,7 +10,7 @@ export default function ListaUsuarios() {
       try {
         setCarregando(true)
         setErro(null)
-        const resp = await fetch('https://jsonplaceholder.typicode.com/users')
+        const resp = await fetch('https://jsonplaceholder.typicode.com/usariosenterrado')
         if (!resp.ok) {
           // 4xx ou 5xx — fetch NÃO rejeita para esses status! Precisamos lançar à mão.
           throw new Error(`HTTP ${resp.status} — ${resp.statusText}`)
